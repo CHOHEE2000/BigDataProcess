@@ -27,7 +27,10 @@ while True:
 		valList[1] += val[1]
 		output[key] = valList
 
-f = open(result_file, "wt")
+r = open(result_file, "wt")
 for i, j in output.items():
 	s = "{} {}\n".format(i,j)
-	f.write(s)
+	r.write(s)
+
+f.close()
+r.close()
