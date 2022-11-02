@@ -18,7 +18,7 @@ while True:
 
 	key = uberList[0]+","+weekdayCode[day]
 	val = [int(uberList[2]), int(uberList[3])]
-
+	print(key, val)
 	if key not in output:
 		output[key] = val
 	else:
@@ -29,7 +29,8 @@ while True:
 
 f = open(result_file, "wt")
 for i, j in output.items():
-	s = "{} {}\n".format(i,j)
+	v = str(j[0]) + "," + str(j[1])
+	s = "{} {}\n".format(i,v)
 	f.write(s)
 
 f.close()
