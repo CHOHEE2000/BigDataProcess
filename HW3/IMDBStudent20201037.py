@@ -25,7 +25,10 @@ while True:
 		else:
 			genrelist[genres] += 1
 
-f = open(result_file, "wt")
+r = open(result_file, "wt")
 for i, j in genrelist.items():
 	s = "{} {}\n".format(i,j)
-	f.write(s)
+	r.write(s)
+
+f.close()
+r.close()
