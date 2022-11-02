@@ -18,7 +18,7 @@ while True:
 
 	key = uberList[0]+","+weekdayCode[day]
 	val = [int(uberList[2]), int(uberList[3])]
-	print(key, val)
+	
 	if key not in output:
 		output[key] = val
 	else:
